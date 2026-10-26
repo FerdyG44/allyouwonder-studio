@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service · All You Wonder Studio</title>
+<meta name="description" content="All You Wonder Studio: a private desktop tool that makes and uploads videos for the All You Wonder YouTube channel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one calm reading column; a short app intro on top, the full privacy policy below it (#privacy). */
+:root {
+  --bg: #f3f6f8;
+  --surface: #ffffff;
+  --ink: #14212b;
+  --muted: #4d5f6c;
+  --line: #d5dfe6;
+  --accent: #0f7f86;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d151b; --surface: #142028; --ink: #e6eef3; --muted: #9fb1bd; --line: #24343f; --accent: #49c9c4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d151b; --surface: #142028; --ink: #e6eef3; --muted: #9fb1bd; --line: #24343f; --accent: #49c9c4;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 48px 64px;
+}
+main { max-width: 44rem; margin: 0 auto; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.mark { display: flex; align-items: center; gap: 12px; color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+.mark svg { width: 34px; height: 34px; flex: none; }
+h1, h2 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); }
+h2 { font-size: 1.55rem; }
+h3 { font-size: 1.05rem; margin: 0 0 4px; }
+p { margin: 0; }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 38rem; }
+section { display: grid; gap: 16px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 12px; }
+.fact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; min-width: 0; }
+.fact p { color: var(--muted); font-size: 15px; }
+.policy { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px clamp(18px, 4vw, 36px); display: grid; gap: 22px; }
+.policy .meta { color: var(--muted); font-size: 14px; }
+.policy ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 6px; }
+.policy div { display: grid; gap: 8px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+code { font-size: .9em; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+    <div class="mark">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="currentColor" d="M32 4l3.6 13.3L48 10l-6.8 12L56 24l-13.3 3.6L48 40l-12-6.8L32 46l-3.6-13.3L16 40l6.8-12L8 24l13.3-3.6L16 10l12 6.8z"/><path fill="none" stroke="currentColor" stroke-width="3" d="M8 50c8-4 16-4 24 2 8-6 16-6 24-2v8c-8-4-16-4-24 2-8-6-16-6-24-2z"/></svg>
+      All You Wonder Studio
+    </div>
+    <h1>A small studio app for one YouTube channel</h1>
+    <p class="lead">All You Wonder Studio is a private desktop tool that produces short educational videos for the YouTube channel <a href="https://www.youtube.com/@alluwonder" target="_blank" rel="noopener">All You Wonder (@alluwonder)</a> and uploads them to that channel after the channel owner approves each one.</p>
+  </header>
+  <section class="policy" id="terms" aria-labelledby="terms-title">
+    <div>
+      <h2 id="terms-title">Terms of Service</h2>
+      <p class="meta">Effective 26 October 2026 · Applies to All You Wonder Studio</p>
+    </div>
+    <div>
+      <h3>About the app</h3>
+      <p>All You Wonder Studio is a private desktop application operated by Ferdi Gülseren. It makes videos for the All You Wonder YouTube channel and uploads them to that channel after the channel owner approves each one. It is not offered to the public and has no user accounts other than the channel owner.</p>
+    </div>
+    <div>
+      <h3>YouTube API Services</h3>
+      <p>The app uses YouTube API Services. Use of the app is subject to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. Google's handling of personal data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. The app's own data practices are described in the <a href="privacy.html">All You Wonder Studio Privacy Policy</a>.</p>
+    </div>
+    <div>
+      <h3>What the app does with your YouTube account</h3>
+      <ul>
+        <li>It requests only the <code>youtube.upload</code> permission.</li>
+        <li>It uploads only videos that the channel owner has reviewed and approved in the app.</li>
+        <li>Every upload starts as <strong>private</strong>. Public release is set by the channel owner.</li>
+        <li>It does not delete, edit or comment on existing videos, and it does not access other channels.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Content</h3>
+      <p>Videos are produced from original scripts with AI-generated visuals and synthetic narration. Each upload is marked as containing synthetic media, factual videos list their sources, and fictional videos are labelled as original stories. The channel owner is responsible for the videos published on the channel and for complying with YouTube's Community Guidelines.</p>
+    </div>
+    <div>
+      <h3>Revoking access</h3>
+      <p>The channel owner can revoke the app's access at any time on the <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a>. Data deletion steps are listed in the <a href="privacy.html#privacy">Privacy Policy</a>.</p>
+    </div>
+    <div>
+      <h3>No warranty</h3>
+      <p>The app is provided as is, for the owner's own use, without warranties of any kind.</p>
+    </div>
+    <div>
+      <h3>Changes and contact</h3>
+      <p>Updates to these terms will appear on this page with a new effective date. Questions can be sent through the contact options on the All You Wonder channel's About page on YouTube.</p>
+    </div>
+  </section>
+
+<footer><a href="./">All You Wonder Studio</a> · <a href="privacy.html">Privacy policy</a> · <a href="https://www.youtube.com/@alluwonder">All You Wonder on YouTube</a></footer>
+</main>
+</body>
+</html>

@@ -101,12 +101,19 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <p>YouTube data obtained through the API is not sold, shared with third parties, or used for advertising. The only party that receives data from the app is Google/YouTube, through the official YouTube API Services.</p>
     </div>
     <div>
-      <h3>Google and YouTube terms</h3>
-      <p>The app uses YouTube API Services. By using it, the owner is bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      <h3>YouTube API Services</h3>
+      <p>All You Wonder Studio uses YouTube API Services. By using it, the owner is bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
     </div>
     <div>
       <h3>Revoking access and deleting data</h3>
-      <p>Access can be revoked at any time on the <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a>. Removing the app's entry from the Keychain and deleting its local database removes all data the app stored. Stored API data is kept only as long as needed to track uploads and is deleted when the owner stops using the app.</p>
+      <p>Access can be revoked at any time on the <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a> (Security &rarr; Third-party apps &amp; services). Revoking access stops the app from uploading immediately.</p>
+      <p>To delete all data the app has stored:</p>
+      <ul>
+        <li>remove the app's sign-in entry (service <code>ai-youtube-studio-youtube</code>) from the macOS Keychain;</li>
+        <li>delete the app's local database file, which holds the upload records;</li>
+        <li>optionally delete uploaded videos in YouTube Studio; the app never deletes videos itself.</li>
+      </ul>
+      <p>Stored API data is kept only as long as it is needed to track uploads, and it is deleted when the owner stops using the app.</p>
     </div>
     <div>
       <h3>Viewers of the channel</h3>
@@ -117,7 +124,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <p>Updates to this policy will appear on this page with a new effective date. Questions can be sent through the contact options on the All You Wonder channel's About page on YouTube.</p>
     </div>
   </section>
-<footer><a href="./">All You Wonder Studio</a> · <a href="https://www.youtube.com/@alluwonder">All You Wonder on YouTube</a></footer>
+<footer><a href="./">All You Wonder Studio</a> · <a href="terms.html">Terms of Service</a> · <a href="https://www.youtube.com/@alluwonder">All You Wonder on YouTube</a></footer>
 </main>
 </body>
 </html>
