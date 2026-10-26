@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · All You Wonder Studio</title>
+<meta name="description" content="All You Wonder Studio: a private desktop tool that makes and uploads videos for the All You Wonder YouTube channel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one calm reading column; a short app intro on top, the full privacy policy below it (#privacy). */
+:root {
+  --bg: #f3f6f8;
+  --surface: #ffffff;
+  --ink: #14212b;
+  --muted: #4d5f6c;
+  --line: #d5dfe6;
+  --accent: #0f7f86;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d151b; --surface: #142028; --ink: #e6eef3; --muted: #9fb1bd; --line: #24343f; --accent: #49c9c4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d151b; --surface: #142028; --ink: #e6eef3; --muted: #9fb1bd; --line: #24343f; --accent: #49c9c4;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 48px 64px;
+}
+main { max-width: 44rem; margin: 0 auto; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.mark { display: flex; align-items: center; gap: 12px; color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+.mark svg { width: 34px; height: 34px; flex: none; }
+h1, h2 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); }
+h2 { font-size: 1.55rem; }
+h3 { font-size: 1.05rem; margin: 0 0 4px; }
+p { margin: 0; }
+.lead { font-size: 1.15rem; color: var(--muted); max-width: 38rem; }
+section { display: grid; gap: 16px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 12px; }
+.fact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; min-width: 0; }
+.fact p { color: var(--muted); font-size: 15px; }
+.policy { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 28px clamp(18px, 4vw, 36px); display: grid; gap: 22px; }
+.policy .meta { color: var(--muted); font-size: 14px; }
+.policy ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 6px; }
+.policy div { display: grid; gap: 8px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+code { font-size: .9em; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+    <div class="mark">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="currentColor" d="M32 4l3.6 13.3L48 10l-6.8 12L56 24l-13.3 3.6L48 40l-12-6.8L32 46l-3.6-13.3L16 40l6.8-12L8 24l13.3-3.6L16 10l12 6.8z"/><path fill="none" stroke="currentColor" stroke-width="3" d="M8 50c8-4 16-4 24 2 8-6 16-6 24-2v8c-8-4-16-4-24 2-8-6-16-6-24-2z"/></svg>
+      All You Wonder Studio
+    </div>
+    <h1>A small studio app for one YouTube channel</h1>
+    <p class="lead">All You Wonder Studio is a private desktop tool that produces short educational videos for the YouTube channel <a href="https://www.youtube.com/@alluwonder" target="_blank" rel="noopener">All You Wonder (@alluwonder)</a> and uploads them to that channel after the channel owner approves each one.</p>
+  </header>
+<section class="policy" id="privacy" aria-labelledby="privacy-title">
+    <div>
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="meta">Effective 26 October 2026 · Applies to All You Wonder Studio</p>
+    </div>
+    <div>
+      <h3>Who runs the app</h3>
+      <p>All You Wonder Studio is operated by Ferdi Gülseren, the owner of the All You Wonder YouTube channel, for that channel only.</p>
+    </div>
+    <div>
+      <h3>What data the app accesses</h3>
+      <p>When the owner signs in with Google, the app asks for one permission: <code>https://www.googleapis.com/auth/youtube.upload</code>. It uses that permission only to:</p>
+      <ul>
+        <li>upload videos the owner has approved to the owner's own channel;</li>
+        <li>set each video's title, description, tags, privacy status and release time;</li>
+        <li>set custom thumbnails on those videos.</li>
+      </ul>
+      <p>The app does not read the owner's email, contacts, files, viewing history, analytics or comments, and does not access other users' data.</p>
+    </div>
+    <div>
+      <h3>What is stored and where</h3>
+      <ul>
+        <li>The Google sign-in refresh token is stored in the macOS Keychain on the owner's computer.</li>
+        <li>For each upload, the app keeps the YouTube video ID, upload status, scheduled time and a file fingerprint (to prevent duplicate uploads) in a local database on the same computer.</li>
+        <li>Nothing is stored on servers run by the app. The app has no servers.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sharing</h3>
+      <p>YouTube data obtained through the API is not sold, shared with third parties, or used for advertising. The only party that receives data from the app is Google/YouTube, through the official YouTube API Services.</p>
+    </div>
+    <div>
+      <h3>Google and YouTube terms</h3>
+      <p>The app uses YouTube API Services. By using it, the owner is bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+    </div>
+    <div>
+      <h3>Revoking access and deleting data</h3>
+      <p>Access can be revoked at any time on the <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a>. Removing the app's entry from the Keychain and deleting its local database removes all data the app stored. Stored API data is kept only as long as needed to track uploads and is deleted when the owner stops using the app.</p>
+    </div>
+    <div>
+      <h3>Viewers of the channel</h3>
+      <p>The app does not collect any information about people who watch All You Wonder videos. YouTube's own policies apply to viewers.</p>
+    </div>
+    <div>
+      <h3>Changes and contact</h3>
+      <p>Updates to this policy will appear on this page with a new effective date. Questions can be sent through the contact options on the All You Wonder channel's About page on YouTube.</p>
+    </div>
+  </section>
+<footer><a href="./">All You Wonder Studio</a> · <a href="https://www.youtube.com/@alluwonder">All You Wonder on YouTube</a></footer>
+</main>
+</body>
+</html>
